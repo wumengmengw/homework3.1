@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-	int p,q,n,m,temp;
+	int a,b,n,m,temp;
 	printf("请输入两个正整数n,m:");
 	scanf("%d,%d,",&n,&m);
 	if(n<m)
@@ -10,14 +10,14 @@ int main()
 		n=m;
 		m=temp;
 	}
-	p=n*m;
+	a=n*m;
 	while(m!=0)
 	{
-		q=n%m;
+		b=n%m;
 		n=m;
-		m=q;
+		m=b;
 	}
 	printf("它们的最大公约数为:%d\n",n);
-    printf("它们的最小公倍数为:%d\n",p/n);
+    printf("它们的最小公倍数为:%d\n",a/n);
 	return 0;
 }

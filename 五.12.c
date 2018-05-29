@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	int day,x1,x2;
+	int day,a,b;
 	day=9;
-	x2=1;
+	b=1;
 	while(day>0)
-	{x1=(x2+1)*2;
-	 x2=x1;
+	{a=(b+1)*2;
+	 b=a;
 	 day--;
 	}
-	printf("total=%d\n",x1);
+	printf("共摘了%d个桃子\n",a);
 	return 0;
 }
